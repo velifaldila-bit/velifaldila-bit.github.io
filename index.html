@@ -10,8 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+
+html{
+  scroll-behavior:smooth
+}
 
 body{
   font-family:"DM Sans",Arial,sans-serif;
@@ -121,8 +128,13 @@ body{
   z-index:2;
 }
 
-.prev{left:26px}
-.next{right:26px}
+.prev{
+  left:26px
+}
+
+.next{
+  right:26px
+}
 
 .dots{
   display:flex;
@@ -191,6 +203,7 @@ body{
   margin-bottom:22px;
 }
 
+/* HOBI */
 
 .hobbies{
   display:grid;
@@ -219,6 +232,8 @@ body{
   font-size:17px;
   padding:15px 10px 17px;
 }
+
+/* SPOTIFY */
 
 .songs{
   display:grid;
@@ -266,7 +281,10 @@ body{
   margin-top:15px;
 }
 
+/* HP */
+
 @media(max-width:650px){
+
   .navbar{
     height:auto;
     min-height:62px;
@@ -291,8 +309,13 @@ body{
     height:38px;
   }
 
-  .prev{left:20px}
-  .next{right:20px}
+  .prev{
+    left:20px
+  }
+
+  .next{
+    right:20px
+  }
 
   .song{
     align-items:flex-start;
@@ -309,227 +332,464 @@ body{
   .hobby img{
     height:250px;
   }
-
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav class="navbar">
-  <div class="logo">🌸 VELIF ALDILA</div>
+
+  <div class="logo">
+    🌸 VELIF ALDILA
+  </div>
 
   <div class="navlinks">
-    <a href="#home">Beranda</a>
-    <a href="#social">Sosial Media</a>
-    <a href="#hobbies">Hobi</a>
-    <a href="#spotify">Top Spotify</a>
+
+    <a href="#home">
+      Beranda
+    </a>
+
+    <a href="#social">
+      Sosial Media
+    </a>
+
+    <a href="#hobbies">
+      Hobi
+    </a>
+
+    <a href="#spotify">
+      Top Spotify
+    </a>
+
   </div>
+
 </nav>
+
 
 <main id="home">
 
+<!-- FOTO SLIDE -->
+
 <section class="hero">
 
-  <div class="title">My Profile ♡</div>
+  <div class="title">
+    My Profile ♡
+  </div>
+
 
   <div class="slider">
 
-    <button class="arrow prev" onclick="move(-1)" aria-label="Foto sebelumnya">‹</button>
+    <button
+      class="arrow prev"
+      onclick="move(-1)"
+      aria-label="Foto sebelumnya">
+      ‹
+    </button>
+
 
     <div class="slide-window">
+
       <div class="slides" id="slides">
 
-        <!-- 5 FOTO YANG SUDAH DIMASUKKAN -->
+        <!-- FOTO 1 -->
         <div class="slide">
-          <img src="images/foto1.jpeg" alt="Foto Velif 1">
+          <img
+            src="images/foto1.jpeg"
+            alt="Foto Velif 1">
         </div>
 
+
+        <!-- FOTO 2 -->
         <div class="slide">
-          <img src="images/foto2.jpeg" alt="Foto Velif 2">
+          <img
+            src="images/foto2.jpeg"
+            alt="Foto Velif 2">
         </div>
 
+
+        <!-- FOTO 3 -->
         <div class="slide">
-          <img src="images/foto3.jpeg" alt="Foto Velif 3">
+          <img
+            src="images/foto3.jpeg"
+            alt="Foto Velif 3">
         </div>
 
+
+        <!-- FOTO 4 -->
         <div class="slide">
-          <img src="images/foto4.jpeg" alt="Foto Velif 4">
+          <img
+            src="images/foto4.jpeg"
+            alt="Foto Velif 4">
         </div>
 
+
+        <!-- FOTO 5 -->
         <div class="slide">
-          <img src="images/foto5.jpeg" alt="Foto Velif 5">
+          <img
+            src="images/foto5.jpeg"
+            alt="Foto Velif 5">
         </div>
 
       </div>
+
     </div>
 
-    <button class="arrow next" onclick="move(1)" aria-label="Foto berikutnya">›</button>
+
+    <button
+      class="arrow next"
+      onclick="move(1)"
+      aria-label="Foto berikutnya">
+      ›
+    </button>
 
   </div>
+
+
+  <!-- TITIK FOTO -->
 
   <div class="dots" id="dots"></div>
 
+
+  <!-- SOSIAL MEDIA -->
+
   <div class="social" id="social">
 
-    <a href="https://www.instagram.com/veliifdla_?stkn=MTA3M3NwMm9hcm43ZQ==" target="_blank">
-      <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="">
+    <a
+      href="https://www.instagram.com/veliifdla_?stkn=MTA3M3NwMm9hcm43ZQ=="
+      target="_blank">
+
+      <img
+        src="https://cdn.simpleicons.org/instagram/E4405F"
+        alt="">
+
       Instagram
+
     </a>
 
-    <a href="https://www.tiktok.com/@loevssunn" target="_blank">
-      <img src="https://cdn.simpleicons.org/tiktok/111111" alt="">
+
+    <a
+      href="https://www.tiktok.com/@loevssunn"
+      target="_blank">
+
+      <img
+        src="https://cdn.simpleicons.org/tiktok/111111"
+        alt="">
+
       TikTok
+
     </a>
 
-    <a href="https://open.spotify.com/user/31x66nm2psoo4nlrwfpmji3gdj6y" target="_blank">
-      <img src="https://cdn.simpleicons.org/spotify/1DB954" alt="">
+
+    <a
+      href="https://open.spotify.com/user/31x66nm2psoo4nlrwfpmji3gdj6y"
+      target="_blank">
+
+      <img
+        src="https://cdn.simpleicons.org/spotify/1DB954"
+        alt="">
+
       Spotify
+
     </a>
 
   </div>
 
 </section>
+
+
+<!-- HOBI -->
 
 <section class="section" id="hobbies">
 
-  <h2>♡ My Hobbies</h2>
-  <p class="sub">Hal-hal yang aku suka lakukan di waktu luang ♡</p>
+  <h2>
+    ♡ My Hobbies
+  </h2>
+
+  <p class="sub">
+    Hal-hal yang aku suka lakukan di waktu luang ♡
+  </p>
+
 
   <div class="hobbies">
 
-    <div class="hobby">
-      <img src="images/hobby-cooking.jpeg" alt="Hobi cooking">
-      <h3>🍳 Cooking</h3>
-    </div>
+    <!-- COOKING -->
 
     <div class="hobby">
-      <img src="images/hobby-gaming.jpeg" alt="Hobi gaming">
-      <h3>🎮 Gaming</h3>
+
+      <img
+        src="images/hobby-cooking.jpeg"
+        alt="Hobi cooking">
+
+      <h3>
+        🍳 Cooking
+      </h3>
+
     </div>
 
+
+    <!-- GAMING -->
+
     <div class="hobby">
-      <img src="images/hobby-watching-film.jpeg" alt="Hobi watching film">
-      <h3>🎬 Watching Film</h3>
+
+      <img
+        src="images/hobby-gaming.jpeg"
+        alt="Hobi gaming">
+
+      <h3>
+        🎮 Gaming
+      </h3>
+
+    </div>
+
+
+    <!-- WATCHING FILM -->
+
+    <div class="hobby">
+
+      <img
+        src="images/hobby-watching-film.jpeg"
+        alt="Hobi watching film">
+
+      <h3>
+        🎬 Watching Film
+      </h3>
+
     </div>
 
   </div>
+
 </section>
+
+
+<!-- TOP SPOTIFY -->
 
 <section class="section" id="spotify">
 
-  <h2>🎧 Top Spotify</h2>
-  <p class="sub">Lagu yang sering aku dengarkan ♡</p>
+  <h2>
+    🎧 Top Spotify
+  </h2>
+
+  <p class="sub">
+    Lagu yang sering aku dengarkan ♡
+  </p>
+
 
   <div class="songs">
 
+    <!-- LAGU 1 -->
+
     <div class="song">
+
       <div>
-        <strong>Bertaut</strong>
-        <span>Nadin Amizah</span>
+
+        <strong>
+          Bertaut
+        </strong>
+
+        <span>
+          Nadin Amizah
+        </span>
+
       </div>
 
-      <a class="play" target="_blank"
-         href="https://open.spotify.com/track/630DpnzdfjdVqv2yLfPbAX">
+      <a
+        class="play"
+        target="_blank"
+        href="https://open.spotify.com/track/630DpnzdfjdVqv2yLfPbAX">
+
         Spotify ↗
+
       </a>
+
     </div>
 
+
+    <!-- LAGU 2 -->
+
     <div class="song">
+
       <div>
-        <strong>Ini Abadi</strong>
-        <span>Perunggu</span>
+
+        <strong>
+          Ini Abadi
+        </strong>
+
+        <span>
+          Perunggu
+        </span>
+
       </div>
 
-      <a class="play" target="_blank"
-         href="https://open.spotify.com/track/6v5RJuJ9yhvaXkMXMeMZBw">
+      <a
+        class="play"
+        target="_blank"
+        href="https://open.spotify.com/track/6v5RJuJ9yhvaXkMXMeMZBw">
+
         Spotify ↗
+
       </a>
+
     </div>
 
+
+    <!-- LAGU 3 -->
+
     <div class="song">
+
       <div>
-        <strong>Jatuh Suka</strong>
-        <span>Tulus</span>
+
+        <strong>
+          Jatuh Suka
+        </strong>
+
+        <span>
+          Tulus
+        </span>
+
       </div>
 
-      <a class="play" target="_blank"
-         href="https://open.spotify.com/track/6PqWdGIYq5xdLaa4zCZfRp">
+      <a
+        class="play"
+        target="_blank"
+        href="https://open.spotify.com/track/6PqWdGIYq5xdLaa4zCZfRp">
+
         Spotify ↗
+
       </a>
+
     </div>
 
   </div>
+
 </section>
 
 </main>
 
+
+<!-- FOOTER -->
+
 <footer class="footer">
+
   © 2026 Velif Aldila · Personal Website ♡
+
 </footer>
 
+
 <script>
+
 let current = 0;
+
 const total = 5;
 
-const slides = document.getElementById("slides");
-const dots = document.getElementById("dots");
+const slides =
+  document.getElementById("slides");
+
+const dots =
+  document.getElementById("dots");
+
+
+// MEMBUAT TITIK FOTO
 
 for(let i = 0; i < total; i++){
 
-  const d = document.createElement("button");
+  const d =
+    document.createElement("button");
 
-  d.className = "dot" + (i === 0 ? " active" : "");
+  d.className =
+    "dot" + (i === 0 ? " active" : "");
 
-  d.setAttribute("aria-label", "Pilih foto " + (i + 1));
+  d.setAttribute(
+    "aria-label",
+    "Pilih foto " + (i + 1)
+  );
 
   d.onclick = () => go(i);
 
   dots.appendChild(d);
 }
 
+
+// PINDAH FOTO
+
 function go(n){
 
-  current = (n + total) % total;
+  current =
+    (n + total) % total;
 
   slides.style.transform =
     `translateX(-${current * 100}%)`;
 
-  [...dots.children].forEach((d,i) =>
-    d.classList.toggle("active", i === current)
+  [...dots.children].forEach(
+    (d,i) =>
+      d.classList.toggle(
+        "active",
+        i === current
+      )
   );
 }
 
+
+// TOMBOL KIRI / KANAN
+
 function move(n){
+
   go(current + n);
+
 }
 
-setInterval(() => move(1), 5000);
 
-// Swipe di HP
+// OTOMATIS GANTI FOTO SETIAP 5 DETIK
+
+setInterval(
+  () => move(1),
+  5000
+);
+
+
+// SWIPE DI HP
+
 let startX = 0;
 
-const win = document.querySelector(".slide-window");
+const win =
+  document.querySelector(".slide-window");
+
 
 win.addEventListener(
   "touchstart",
-  e => startX = e.touches[0].clientX,
-  {passive:true}
+  e => {
+
+    startX =
+      e.touches[0].clientX;
+
+  },
+  {
+    passive:true
+  }
 );
+
 
 win.addEventListener(
   "touchend",
   e => {
 
     const dx =
-      e.changedTouches[0].clientX - startX;
+      e.changedTouches[0].clientX
+      - startX;
 
     if(Math.abs(dx) > 45){
-      move(dx < 0 ? 1 : -1);
+
+      move(
+        dx < 0 ? 1 : -1
+      );
+
     }
 
   }
 );
+
 </script>
 
 </body>
